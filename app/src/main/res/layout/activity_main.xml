@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B9B9FF"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="开始选餐"
+        android:typeface="monospace"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold|italic"/>
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="60dp"
+             android:layout_height="wrap_content"
+             android:text="@string/name"/>
+         <EditText
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/name"
+             android:hint="@string/name_input_hint"/>
+     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/sexGroup"
+            >
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="@string/male"/>
+            <RadioButton
+                android:id="@+id/fmale"
+                android:width="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fmale"/>
+        </RadioGroup>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fav"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:id="@+id/hotCheckbox"
+                android:text="@string/hot" />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:id="@+id/fishCheckBox"
+                android:text="@string/fishFresh" />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:id="@+id/sourCheckBox"
+                android:text="@string/sour" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prev"/>
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="20dp"
+            android:max="100"
+            android:id="@+id/seekBar"
+            android:progress="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prize"
+            android:textSize="22sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/searBtn"
+        android:text="@string/search"/>
+
+    <ToggleButton
+        android:id="@+id/showTroggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="下一个"
+        android:textOn="显示信息"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footName"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
